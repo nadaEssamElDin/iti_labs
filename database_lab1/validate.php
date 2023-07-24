@@ -142,7 +142,7 @@ if (isset($_FILES['file'])) {
 
         $name = $_POST['name'];
         $email = $_POST['email'];
-        $roomNumber = isset($_POST['roomNumber']) ? $_POST['roomNumber'] : ''; // Check if roomNumber is set
+        $roomNumber = isset($_POST['roomNumber']) ? $_POST['roomNumber'] : ''; 
 
         $sql = "insert into users values(?,?,?,?)";
         $stm = $db->prepare($sql);
@@ -187,6 +187,5 @@ if (isset($_FILES['file'])) {
 }
 ?>
 
-<!-- Your HTML code goes here -->
 </body>
 </html>
