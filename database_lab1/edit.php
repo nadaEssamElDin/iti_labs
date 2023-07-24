@@ -25,15 +25,14 @@ if (isset($_GET['email'])) {
     }
 
     if (isset($_POST['submit'])) {
-        // Update the user's information in the database
+        
         $name = $_POST['name'];
         $password = $_POST['password'];
 
-        // Ensure that the "roomNumber" field is being sent in the form data
         if (isset($_POST['roomNumber'])) {
             $roomNumber = $_POST['roomNumber'];
         } else {
-            $roomNumber = ''; // Set a default value or handle it as you see fit.
+            $roomNumber = ''; 
         }
 
         $sql = "UPDATE users SET name = ?, password = ?, roomNumber = ? WHERE email = ?";
