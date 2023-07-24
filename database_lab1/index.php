@@ -61,7 +61,7 @@
             background-color: #45a049;
         }
 
-        /* Additional styling for error messages (if you decide to add any) */
+        
         .error-message {
             color: red;
             margin-bottom: 10px;
